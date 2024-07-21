@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    /* font-family: "Indie Flower", cursive; */
+    font-size: 20px;
+
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(116, 185, 116);
+}
+
+#display {
+    width: 80vw;
+    height: 85vh;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+#scoreBoard {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(37, 122, 70);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+
+.function {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.function>h3 {
+    color: rgba(255, 255, 255, 0.911);
+    ;
+}
+
+.function>div {
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255, 0.911);
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(37, 90, 37);
+
+}
+
+#playArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: rgba(255, 255, 255, 0.788);
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.start>h2 {
+    margin-bottom: 50px;
+}
+
+.startBtn {
+    border: none;
+    background-color: rgba(30, 65, 37, 0.89);
+    color: azure;
+    padding: 15px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+.bubbleBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.bubbleBox .bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(30, 65, 37, 0.89);
+    color: azure;
+}
+
+.bubble:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.restart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart>h2 {
+    margin-bottom: 50px;
+}
+
+.restart>button {
+    border: none;
+    background-color: rgba(30, 65, 37, 0.89);
+    color: azure;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.restart>button:hover {
+    background-color: rgba(30, 92, 42, 0.89);
+    padding: 14px 19px;
+
+}
